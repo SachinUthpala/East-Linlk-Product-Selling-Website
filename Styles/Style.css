@@ -7,7 +7,7 @@
 
 .overlay{
     color: #fff;
-    padding: 120px 35px;
+    padding: 40px 35px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -17,6 +17,35 @@
 
 .overlay > .left{
     flex: 2;
+}
+
+.overlay > .left h1{
+    font-size: 50px;
+}
+
+.overlay > .left h4{
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.overlay > .left p{
+    font-size: 15px;
+}
+
+.overlay > .left a{
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 120px;
+    background-color: #ffffff27;
+    border: 2px solid #fff;
+    font-weight: bold;
+}
+
+.overlay > .left a:hover{
+    transition: 1s;
+    color: #ff0055;
+    background-color: #ffffffd3;
 }
 
 .overlay > .right{
@@ -34,6 +63,14 @@
     border-radius: 100%;
     border: 2px solid #fff;
     padding-left: 2px;
+    margin-left: 50px;
+    margin-top: 250px;
+}
+
+.overlay > .right > .round:hover{
+    background-color: #ff0055;
+    transition: 0.7s ease-in-out;
+    cursor: pointer;
 }
 
 .overlay > .right > .round > i{
@@ -56,6 +93,7 @@
 
 @media (max-width: 920px){
     .overlay{
+        padding-top: 200px;
         gap: 50px;
         justify-content: center;
         flex-direction: column;
