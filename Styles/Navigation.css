@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 
 body{
@@ -22,10 +23,18 @@ a{
 header{
     position: absolute;
     top: 0px;
-    background-color: #ffffffb9;
+    background-color: #ffffff93;
     width: 100%;
     z-index: 1000;
     padding: 10px 0;
+    transition-delay: 150ms;
+    transition-delay: 100ms;
+}
+
+.sticky{
+    position: sticky;
+    background-color: #efefef;
+    padding: 15px 0;
 }
 
 .sy{
@@ -49,7 +58,7 @@ section{
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.185);
+    background-color: rgba(0, 0, 0, 0.308);
 }
 
 .container{
