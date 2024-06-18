@@ -189,6 +189,7 @@ main{
 
 @media (max-width: 920px){
     .containers{
+        height: auto;
         padding: 35px 25px;
     }
     .overlay{
@@ -233,6 +234,12 @@ main{
         font-size: 25px;
         color: #1d1d1d;
         padding: 10px 0px;
+    }
+
+    .section02 >  .cards{
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
     }
     
 }
