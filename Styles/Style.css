@@ -179,6 +179,24 @@ main{
 }
 
 
+/* top button */
+
+.top{
+    display: none;
+    position: fixed;
+    z-index: 100000;
+    left:1%;
+    top: 88%;
+    padding: 12px 20px;
+    background-color: #fff;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.top>i:hover{
+    color: #ff0055 ;
+}
+
 
 
 
@@ -242,4 +260,8 @@ main{
         gap: 100px;
     }
     
+    .top{
+        left: 2%;
+        top: 92%;
+    }
 }
