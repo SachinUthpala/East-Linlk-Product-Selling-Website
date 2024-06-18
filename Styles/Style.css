@@ -206,6 +206,14 @@ section03
     display: flex;
     gap: 30px;
     text-align: center;
+    align-items: center;
+}
+
+
+
+.right > .backDiv{
+    width: 500px;
+    height: 450px;
 }
 
 
