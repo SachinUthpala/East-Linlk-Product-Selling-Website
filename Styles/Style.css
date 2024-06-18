@@ -123,6 +123,39 @@ main{
     padding: 10px 100px;
 }
 
+.section02 >  .cards{
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: repeat(4 , 270px);
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.section02 >  .cards > .item{
+    padding: 20px 15px;
+    text-align: center;
+    border-bottom: 3px solid #585858ad;
+}
+
+.section02 >  .cards > .item > i{
+    font-size: 45px;
+    color: #292929b6;
+}
+
+.section02 >  .cards > .item > h1{
+    font-family: "Oswald", sans-serif;
+    font-size: 25px;
+    margin: 35px 0px 10px 0px;
+}
+
+.section02 >  .cards > .item > p{
+    font-size: 12px;
+    font-weight: normal;
+    color: #2c2c2c;
+    margin-bottom: 10px;
+}
+
 
 
 
