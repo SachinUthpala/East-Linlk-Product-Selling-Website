@@ -135,7 +135,7 @@ main{
 .section02 >  .cards > .item{
     padding: 20px 15px;
     text-align: center;
-    border-bottom: 3px solid #585858ad;
+    border-bottom: 3px solid #777777ad;
 }
 
 .section02 >  .cards > .item > i{
@@ -151,9 +151,14 @@ main{
 
 .section02 >  .cards > .item > p{
     font-size: 12px;
-    font-weight: normal;
+    font-weight: bold;
     color: #2c2c2c;
     margin-bottom: 10px;
+}
+
+.section02 >  .cards > .item:hover{
+    cursor: pointer;
+    box-shadow: #4141413a 0px 2px 8px 0px;
 }
 
 
