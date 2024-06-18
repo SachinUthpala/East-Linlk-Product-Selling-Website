@@ -47,7 +47,7 @@ header{
 
 section{
     position: relative;
-    height: calc(90vh - 3rem);
+    height: calc(95vh - 3rem);
     width: 100%;
     background: url('../Images/Web/pexels-anastasia-shuraeva-7278860.jpg') no-repeat top center / cover;
     overflow: hidden;
