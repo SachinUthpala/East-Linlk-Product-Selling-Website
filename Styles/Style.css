@@ -378,6 +378,62 @@ section03
     justify-content: space-between;
 }
 
+/* 
+    section 05
+*/
+
+.sec05{
+    text-align: center;
+    padding: 60px 25px;
+    height: auto;
+}
+
+
+.sec05 > .news{
+    padding: 20px 0px;
+    display: grid;
+    grid-template-columns: repeat(4 , 300px);
+    justify-content: space-between;
+    text-align: left;
+}
+
+.sec05 > .news > .card {
+    background-color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border-bottom: 2px solid #1d1d1d;
+}
+
+.sec05 > .news > .card > img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.sec05 > .news > .card > h4 {
+    color: #414141;
+    text-transform: uppercase;
+    font-size: small;
+    padding: 20px 0px 10px 0px;
+}
+
+
+.sec05 > .news > .card > h1{
+    font-size: large;
+    padding: 0px 0px 20px 0px;
+}
+
+
+.sec05 > .news > .card > p{
+    color: #414141;
+    padding: 0px 0px 10px 0px;
+}
+
+/* 
+    footer
+*/
+
 
 
 /* 
