@@ -574,4 +574,13 @@ section03
         color: #fff;
     }
     
+    /*  section 05 */
+
+    .sec05 > .news{
+        display: grid;
+        grid-template-columns: repeat(1 , 270px);
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
 }
