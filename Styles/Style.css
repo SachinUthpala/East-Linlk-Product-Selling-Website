@@ -22,7 +22,7 @@ main{
     
     width: 100%;
     height: 100vh;
-    background-color: rgb(236, 236, 236);
+    background-color: rgb(238, 238, 238);
     padding: 30px 55px;
 }
 
@@ -218,19 +218,58 @@ section03
 */
 
 .sec03{
-    padding-top: 80px;
     display: flex;
-    gap: 30px;
-    text-align: center;
+    gap: 70px;
     align-items: center;
 }
 
-
-
-.right > .backDiv{
-    width: 500px;
-    height: 450px;
+.sec03 > .sec03-left{
+    flex: 1.5;
 }
+
+.sec03 > .sec03-left > h2{
+    font-size: 16px;
+    font-weight: normal;
+    color: #292929;
+}
+
+.sec03 > .sec03-left > h1{
+    color: #1d1d1d;
+}
+
+.sec03 > .sec03-left > p{
+    font-size: 14px;
+    color: #3a3a3a;
+}
+
+.sec03 > .sec03-left > .counters{
+    padding-top: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+
+.sec03 > .sec03-left > .counters > .con{
+    text-align: center;
+}
+
+.sec03 > .sec03-right{
+    flex: 1.5;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.sec03 > .sec03-right > .sec03-card{
+    width: 350px;
+    height: 300px;
+    background-color: #ff0055;
+}
+
+
+
+
 
 
 
