@@ -34,22 +34,47 @@ function topFunction() {
 
 
 
-      // for counter
 
-      const counts = document.querySelectorAll('.count')
-      const speed = 20
 
-      counts.forEach((counter) => {
-          function upDate(){
-              const target = Number(counter.getAttribute('data-target'))
-              const count = Number(counter.innerText)
-              const inc = target / speed        
-              if(count < target){
-                  counter.innerText = Math.floor(inc + count) 
-                  setTimeout(upDate, 15)
-              }else{
-                  counter.innerText = target
-              }
-          }
-          upDate()
-      })
+      // counter elemenet
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const counts = document.querySelectorAll('.count');
+        const speed = 20; // Increase this value to slow down the speed
+    
+        // Function to handle the counting animation
+        function startCounting(counter) {
+            function upDate() {
+                const target = Number(counter.getAttribute('data-target'));
+                const count = Number(counter.innerText);
+                const inc = target / speed;
+                if (count < target) {
+                    counter.innerText = Math.floor(inc + count);
+                    setTimeout(upDate, 50); // Increase this value to slow down the updates
+                } else {
+                    counter.innerText = target;
+                }
+            }
+            upDate();
+        }
+    
+        // Create an intersection observer to detect when the counters come into view
+        const observerOptions = {
+            threshold: 0.1 // Trigger when at least 10% of the element is in view
+        };
+    
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    startCounting(entry.target);
+                    observer.unobserve(entry.target); // Stop observing the element once it has started counting
+                }
+            });
+        }, observerOptions);
+    
+        // Observe each counter element
+        counts.forEach(counter => {
+            observer.observe(counter);
+        });
+    });
+    
