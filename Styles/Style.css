@@ -218,31 +218,35 @@ section03
 */
 
 .sec03{
+   padding-top: 50px; 
+}
+
+.sec03 > .main-content{
     display: flex;
     gap: 70px;
     align-items: center;
 }
 
-.sec03 > .sec03-left{
+.sec03 > .main-content > .sec03-left{
     flex: 1.5;
 }
 
-.sec03 > .sec03-left > h2{
+.sec03 > .main-content> .sec03-left > h2{
     font-size: 16px;
     font-weight: normal;
     color: #292929;
 }
 
-.sec03 > .sec03-left > h1{
+.sec03 > .main-content > .main-content > .sec03-left > h1{
     color: #1d1d1d;
 }
 
-.sec03 > .sec03-left > p{
+.sec03 > .main-content > .sec03-left > p{
     font-size: 14px;
     color: #3a3a3a;
 }
 
-.sec03 > .sec03-left > .counters{
+.sec03 > .main-content > .sec03-left > .counters{
     padding-top: 18px;
     display: flex;
     flex-direction: row;
@@ -251,17 +255,17 @@ section03
 }
 
 
-.sec03 > .sec03-left > .counters > .con{
+.sec03 > .main-content > .sec03-left > .counters > .con{
     text-align: center;
 }
 
-.sec03 > .sec03-right{
+.sec03 > .main-content > .sec03-right{
     flex: 1.5;
     display: flex;
     flex-direction: row;
     gap: 30px;
 }
-.sec03 > .sec03-right > .sec03-card{
+.sec03 > .main-content > .sec03-right > .sec03-card{
     width: 350px;
     height: 300px;
     text-align: center;
@@ -269,22 +273,22 @@ section03
     color: #fff;
 }
 
-.sec03 > .sec03-right > .card01{
+.sec03  > .main-content > .sec03-right > .card01{
     background: linear-gradient(#000000b7 , #000000b7) , url(../Images/Web/mission.jpg) ;
     background-size: cover;
 }
 
-.sec03 > .sec03-right > .card02{
+.sec03 > .main-content > .sec03-right > .card02{
     background: linear-gradient(#000000b7 , #000000b7) , url(../Images/Web/vision.jpg) ;
     background-size: cover;
 }
 
-.sec03 > .sec03-right > .sec03-card > .content{
+.sec03 > .main-content > .sec03-right > .sec03-card > .content{
     text-align: center;
     padding-top: 25%;
 }
 
-.sec03 > .sec03-right > .sec03-card > .content > h2{
+.sec03 > .main-content > .sec03-right > .sec03-card > .content > h2{
     padding-bottom: 10px;
     font-size: 30px;
 }
@@ -301,6 +305,13 @@ section03
 */
 
 @media (max-width: 920px){
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
     .containers{
         height: auto;
         padding: 35px 25px;
@@ -309,7 +320,7 @@ section03
 
         height: 100vh;
         padding-top: 180px;
-        gap: 30px;
+        gap: 20px;
         justify-content: center;
         flex-direction: column;
         text-align: center;
@@ -371,7 +382,31 @@ section03
     /* pre loader */
     .loader .img{
         position: absolute;
-        margin-top: 50px;
-        margin-left: -40px;
+        margin-top: 70px;
+        margin-left: -20px;
+    }
+
+    /* section03 */
+
+    .sec03{
+        width: 100%;
+        height: auto;
+    }
+
+    .sec03 > .main-content{
+        flex-direction: column;
+    }
+
+    .sec03 > .main-content > .sec03-right{
+        flex-direction: column;
+    }
+
+    .sec03 > .main-content > .sec03-left{
+        width: 300px;
+    }
+
+    .sec03 > .main-content > .sec03-right > .sec03-card{
+        width: 300px;
+        height: 250px;
     }
 }
