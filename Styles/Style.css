@@ -293,10 +293,90 @@ section03
     font-size: 30px;
 }
 
+/* 
+    section 04
+*/
+
+.sec04{
+    height: auto;
+    background: linear-gradient(#00000083 , #00000083) , url(../Images/Web/sec04.jpg);
+    background-size: cover;
+    color: #fff;
+}
+
+.sec04 > .content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.sec04 > .content > .round{
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff62;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    padding-left: 2px;
+    margin-top: 50px;
+}
+
+.sec04 > .content > .round:hover{
+    background-color: #ff0055;
+    transition: 0.7s ease-in-out;
+    cursor: pointer;
+}
+
+.sec04 > .content > .round > i{
+    color: #fff;
+}
 
 
+.sec04 > .content > h1{
+    padding: 10px 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.sec04 > .content > h2{
+    padding: 0px 0px 20px 0px;
+    font-weight: normal;
+}
+
+.sec04 > .content > h4 {
+    padding-bottom: 30px;
+    font-weight: normal;
+    color: #fff;
+}
+
+.sec04 > .content > button {
+    margin-bottom: 40px;
+    padding: 10px 25px;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #ff0055;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.sec04 > .content > button:hover {
+    background-color: #ff0055;
+    color: #fff;
+}
 
 
+.sec04 > .content > .why-should  > .benifites{
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 
 

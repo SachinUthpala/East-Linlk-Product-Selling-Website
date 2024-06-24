@@ -32,3 +32,18 @@ hiddenElementy.forEach((el) =>observery.observe(el))
 
 
 /*end of the animation code */
+
+const observerup = new IntersectionObserver((entries) => {
+    entries.forEach((entrie) => {
+        console.log(entrie)
+        if(entrie.isIntersecting){
+            entrie.target.classList.add('showup');
+        }else{
+            entrie.target.classList.remove('showup');
+        }
+    });
+})
+
+const hiddenElementup = document.querySelectorAll('.hiddenup');
+hiddenElementup.forEach((el) =>observerup.observe(el))
+
