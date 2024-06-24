@@ -583,4 +583,8 @@ section03
         justify-content: center;
         align-items: center;
     }
+
+    .sec05 > .news > .card > img{
+        height: 150px;
+    }
 }
