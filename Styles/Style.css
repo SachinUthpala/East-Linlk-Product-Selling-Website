@@ -498,6 +498,85 @@ footer > .content > .left > .socalMedia > .social-icons > .twitter:hover {
     background: rgb(54, 73, 248);
 }
 
+
+footer > .content > .middle > form {
+    margin-bottom: 15px;
+}
+
+footer > .content > .middle > form > input{
+ padding: 8px 18px;
+ background-color: #424242;
+ color: #fff;
+ border: none;
+ margin-bottom: 10px;
+ border-radius: 5px;
+}
+
+footer > .content > .middle > form > input::placeholder{
+    color: #fff;
+}
+
+footer > .content > .middle > form > button {
+    padding: 5px 10px;
+    background-color: #ff000d;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer > .content > .right > h2 {
+    padding-bottom: 15px ;
+} 
+
+footer > .content > .right > iframe {
+    border-radius: 5px;
+    width: 275px;
+    height: 200px;
+}
+
+footer > .content > .end-right > h2 {
+    padding-bottom: 20px;
+}
+
+footer > .content > .end-right > ul {
+     text-decoration: none;
+     list-style: none;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     color: #fff;
+}
+
+footer > .content > .end-right > ul > li > a {
+    color: #fff;
+}
+
+footer > .content > .end-right > ul > li > a:hover {
+    color: #ff000d;
+}
+
+.after-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.after-content > .tams {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    color: #fff;
+}
+
+
+.after-content > .tams  > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.after-content > .tams  > a:hover {
+    color: #ff000d;
+}
 /* 
     responsive
 */
@@ -652,5 +731,26 @@ footer > .content > .left > .socalMedia > .social-icons > .twitter:hover {
 
     .sec05 > .news > .card > img{
         height: 150px;
+    }
+
+    /* responsive footer */
+    footer{
+        height: auto;
+        padding: 30px 5px;
+        
+    }
+    
+    footer > .content  {
+        flex-direction: column;
+    }
+
+    .after-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .after-content > .tams {
+        flex-direction: column;
+        gap: 5px;
     }
 }
