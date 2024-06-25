@@ -27,7 +27,6 @@ main{
 }
 
 .overlay{
-    height: 100vh;
     color: #fff;
     padding: 40px 35px;
     display: flex;
@@ -91,7 +90,6 @@ main{
     text-align: center;
     border-radius: 100%;
     border: 2px solid #fff;
-    padding-left: 2px;
     margin-left: 50px;
     margin-top: 250px;
 }
@@ -449,6 +447,10 @@ footer > .content {
 */
 
 @media (max-width: 920px){
+
+    .overlay > .right{
+        display: none;
+    }
 
     *{
         padding: 0;
