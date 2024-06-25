@@ -733,21 +733,51 @@ footer > .content > .end-right > ul > li > a:hover {
     /* responsive footer */
     footer{
         height: auto;
-        padding: 30px 5px;
-        
+        padding: 30px 15px;
     }
     
     footer > .content  {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     .after-content {
         flex-direction: column;
         gap: 10px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     .after-content > .tams {
         flex-direction: column;
         gap: 5px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
+
+    footer > .content > .left > .socalMedia > .social-icons{
+        justify-content: space-between;
+    }
+
+
+    footer > .content > .left > .socalMedia > .social-icons > .facebook {
+        background: rgb(22, 45, 255);
+    }
+    
+    footer > .content > .left > .socalMedia > .social-icons > .inster {
+        background: linear-gradient(
+            to right,
+            #f9ce34, #ee2a7b , #6228d7
+          );
+    }
+    
+    footer > .content > .left > .socalMedia > .social-icons > .twitter {
+        background: rgb(54, 73, 248);
+    }
+    
+    
 }
