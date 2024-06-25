@@ -459,6 +459,13 @@ footer > .content > .left > .socalMedia > .social-icons{
     display: flex;
     flex-direction: row;
     gap: 10px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+
+footer > .content > .left > .socalMedia > P {
+    color: #ffffff9c;
 }
 
 footer > .content > .left > .socalMedia > .social-icons > .so-card {
@@ -485,6 +492,10 @@ footer > .content > .left > .socalMedia > .social-icons > .inster:hover {
         to right,
         #f9ce34, #ee2a7b , #6228d7
       );
+}
+
+footer > .content > .left > .socalMedia > .social-icons > .twitter:hover {
+    background: rgb(54, 73, 248);
 }
 
 /* 
