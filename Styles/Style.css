@@ -439,7 +439,52 @@ footer{
 footer > .content {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 50px;
+    align-items: self-start;
+}
+
+footer > .content > .left {
+    flex: 1;
+}
+
+footer > .content > .middle {
+    flex: 0.7;
+}
+
+footer > .content > .right {
+    flex: 1;
+}
+
+footer > .content > .left > .socalMedia > .social-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+footer > .content > .left > .socalMedia > .social-icons > .so-card {
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer > .content > .left > .socalMedia > .social-icons > .so-card > i{
+
+    color: #fff;
+    font-size: medium;
+
+}
+
+footer > .content > .left > .socalMedia > .social-icons > .facebook:hover {
+    background: rgb(22, 45, 255);
+}
+
+footer > .content > .left > .socalMedia > .social-icons > .inster:hover {
+    background: linear-gradient(
+        to right,
+        #f9ce34, #ee2a7b , #6228d7
+      );
 }
 
 /* 
