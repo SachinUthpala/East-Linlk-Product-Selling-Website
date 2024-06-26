@@ -24,6 +24,7 @@ main{
     height: 100vh;
     background-color: rgb(255, 254, 242);
     padding: 30px 55px;
+    overflow-x: hidden;
 }
 
 .overlay{
