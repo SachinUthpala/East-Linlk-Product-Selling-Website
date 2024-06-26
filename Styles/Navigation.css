@@ -28,14 +28,13 @@ header{
     z-index: 1000;
     padding: 10px 0;
     transition-delay: 150ms;
-    transition-delay: 100ms;
 }
 
 .sticky{
     position: sticky;
     background-color: #ffffff;
     padding: 15px 0;
-    
+    transition-delay: 100ms;
 }
 
 .sy{
