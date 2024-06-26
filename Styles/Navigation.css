@@ -183,7 +183,7 @@ section{
 
 .dropdown-link > a{
     display: flex;
-    background-color: #fff;
+    background-color: hsl(0, 0%, 100%);
     color: #000000;
     padding: .5rem 1rem;
     font-size: .9rem;
