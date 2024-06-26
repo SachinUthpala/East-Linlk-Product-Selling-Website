@@ -95,7 +95,7 @@ function topFunction() {
 
 
 
-  const formOpenBtn = document.querySelector("#form-open"),
+  const formOpenBtn = document.querySelector("#form-open") || document.querySelector("#form-open2"),
   home = document.querySelector(".home"),
   formContainer = document.querySelector(".form_container"),
   formCloseBtn = document.querySelector(".form_close"),
