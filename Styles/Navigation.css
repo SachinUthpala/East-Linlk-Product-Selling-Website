@@ -24,7 +24,7 @@ a{
 header{
     position: absolute;
     top: 0px;
-    background-color: #ffffff;
+    background-color: rgb(255, 255, 255);
     width: 100%;
     z-index: 1000;
     padding: 10px 0;
@@ -167,6 +167,7 @@ section{
 }
 
 .dropdown{
+    padding-top: 25px;
     position: absolute;
     top: 100%;
     left: 0;

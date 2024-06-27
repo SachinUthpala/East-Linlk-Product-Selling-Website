@@ -6,6 +6,7 @@
     background: #fff url("../images/Web/loader-01.svg") no-repeat center center;
 }
 
+
 main{
     height: auto;
 }
@@ -922,8 +923,8 @@ footer > .content > .end-right > ul > li > a:hover {
         position: fixed;
         max-width: 320px;
         width: 100%;
-        top: 30%;
-        left: 30%;
+        top: 50%;
+        left: 50%;
       }
     
     
