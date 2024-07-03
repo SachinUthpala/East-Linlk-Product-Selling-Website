@@ -1,0 +1,31 @@
+.ethanet-switches{
+    background: linear-gradient(#00000088, #00000088 ) , url("../Images/Web/ethanet.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+    responsive designs
+*/
+@media (max-width: 920px){
+
+}
