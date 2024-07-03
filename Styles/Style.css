@@ -418,6 +418,58 @@ section03
     padding: 0px 0px 10px 0px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+brand section
+
+*/
+
+
+    .slider .slider-track{
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px* 14);
+    gap: 10px;
+    padding: 30px;
+    }
+    .slider .slide{
+    height: 100px;
+    width: 250px;
+    border: 2px solid #29292948;
+    
+    }
+
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-250px * 7));
+        }
+    }
+
+
+
+
+
+
+
+
+
 /* 
     footer
 */
