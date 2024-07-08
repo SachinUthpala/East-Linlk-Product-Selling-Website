@@ -82,7 +82,7 @@
     margin: 2rem auto;
     border: 1px solid #ffffff;
     background-color: #0c0202;
-    background: linear-gradient(0deg, rgb(219, 219, 219) 0%, rgba(212, 212, 212, 0.829) 100%);
+    background: linear-gradient(0deg, rgb(219, 219, 219) 0%, rgba(197, 197, 197, 0.829) 100%);
     border-radius: .7rem;
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
@@ -109,6 +109,12 @@
         height: 180px;
         object-fit: cover;
       }
+
+      .tokenImage:hover{
+        transition: 0.5s;
+        transform: scale(1.1);  
+        rotate: -5deg;
+      }
       .description{
         margin: .2rem 0;
         color: #000000ec;
@@ -128,9 +134,13 @@
             margin-left: -.3rem;
             margin-right: .5rem;
           }
+          a{
+            text-decoration: none;
+            color: #0f0f0f;
+          }
         }
 
-        .price:hover{
+        .price a:hover{
             color: #ff0000;
             font-weight: 600;
         }
