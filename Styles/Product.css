@@ -20,7 +20,7 @@
 .eth-02 .content .content-card{
     width: 35%;
     height: 200px;
-    background-color: rgb(196, 196, 196);
+    background-color:  rgb(216, 216, 216);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -32,8 +32,7 @@
 }
 
 .eth-02 .content .content-card:hover{
-    background-color: rgb(216, 216, 216);
-    transform: matrix3d(1);
+    background-color: rgb(196, 196, 196);
 }
 
 
@@ -57,4 +56,27 @@
     font-size: small;
     color: rgba(0, 0, 0, 0.705);
     font-weight: 800;
+}
+
+
+
+
+/* css for products */
+.products{
+    
+}
+
+
+
+
+@media (max-width: 920px){
+    .eth-02{
+        height: auto !important;
+    }
+
+    .eth-02 .content{
+        flex-direction: column;
+        padding: 10px 50px;
+    }
+
 }

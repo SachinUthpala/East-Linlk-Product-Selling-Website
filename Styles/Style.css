@@ -832,7 +832,7 @@ end of product page
     }
 
     .containers{
-        height: auto;
+        height: auto !important;
         padding: 35px 25px;
     }
     .overlay{
