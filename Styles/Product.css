@@ -31,6 +31,11 @@
     border-radius: 10px;
 }
 
+.eth-02 .content .content-card:hover{
+    background-color: rgb(216, 216, 216);
+    transform: matrix3d(1);
+}
+
 
 .eth-02 .content .content-card .icon{
     padding: 15px;
