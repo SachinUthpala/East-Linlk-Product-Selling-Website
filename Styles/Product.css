@@ -75,6 +75,20 @@
 }
 
 
+.showDiv {
+  display: block;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  display: grid;
+    grid-template-columns: repeat(4 , 280px);
+    justify-content: space-between;
+}
+.hideDiv {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  pointer-events: none;
+  height: 0vh;
+}
 
 /* product card */
 .product-card{

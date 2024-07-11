@@ -440,6 +440,16 @@
           </div>
         </div>
 
+        <div class="filters">
+
+          <div class="brands">
+            <button type="button" onclick="showAll()">All</button>
+            <button type="button" onclick="showLevel01()">LEVEL ONE</button>
+            <button type="button" onclick="showCisco()">CISCO</button>
+          </div>
+          
+        </div>
+
         <div class="products">
 
           <div class="product-header">
@@ -447,7 +457,7 @@
             <p>ETHERNET SWITCHES - GIGABIT ETHERNET - NON POE</p>
           </div>
 
-          <div class="product-items">
+          <div class="product-items" id="level01Npoe">
             <!-- ----------------------------- -->
             <div class="product-card">
               <div class='main'>
@@ -859,7 +869,7 @@
             <p>ETHERNET SWITCHES - GIGABIT ETHERNET - POE</p>
           </div>
 
-          <div class="product-items">
+          <div class="product-items" id="level01poe">
             
             <!-- ----------------------------- -->
             <div class="product-card">
@@ -1243,7 +1253,7 @@
             <!-- ----------------------------- -->
             <div class="product-card">
               <div class='main'>
-                <img class='tokenImage' src="../../Images/Products/Ethanet_Switches/GTP-5271.png" alt="product" />
+                <img class='tokenImage' src="../../Images/Products/Ethanet_Switches/GTP-2871.png" alt="product" />
                 <h2>GTP-5271</h2>
                 <p class='description'>52-Port L3 Lite Managed Gigabit PoE Switch, 4 x 10GbE SFP+, 370W</p>
                 
@@ -1271,6 +1281,10 @@
 
 
 
+          </div>
+
+          <div class="cisco" id="cisco">
+            no
           </div>
 
 
@@ -1357,6 +1371,48 @@
       </footer>
     </main>
 
+
+  </style>
+  <script>
+    const showLevel01 = () => {
+      const level01npoe = document.getElementById("level01Npoe");
+      const level01poe = document.getElementById("level01poe");
+      const cisco = document.getElementById("cisco");
+
+      level01poe.classList.add("showDiv");
+      level01poe.classList.remove("hideDiv");
+      level01npoe.classList.add("showDiv");
+      level01npoe.classList.remove("hideDiv");
+      cisco.classList.remove("showDiv");
+      cisco.classList.add("hideDiv");
+    }
+
+    const showCisco = () => {
+      const cisco = document.getElementById("cisco");
+      const level01npoe = document.getElementById("level01Npoe");
+      const level01poe = document.getElementById("level01poe");
+
+      cisco.classList.add("showDiv");
+      cisco.classList.remove("hideDiv");
+      level01npoe.classList.remove("showDiv");
+      level01npoe.classList.add("hideDiv");
+      level01poe.classList.remove("showDiv");
+      level01poe.classList.add("hideDiv");
+    }
+
+    const showAll = () => {
+      const level01npoe = document.getElementById("level01Npoe");
+      const level01poe = document.getElementById("level01poe");
+      const cisco = document.getElementById("cisco");
+
+      level01npoe.classList.add("showDiv");
+      level01npoe.classList.remove("hideDiv");
+      level01poe.classList.add("showDiv");
+      level01poe.classList.remove("hideDiv");
+      cisco.classList.add("showDiv");
+      cisco.classList.remove("hideDiv");
+    }
+  </script>
 
     <!-- 
         java script
