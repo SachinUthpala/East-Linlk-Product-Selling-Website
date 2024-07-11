@@ -252,3 +252,17 @@
     }
 
 }
+
+
+
+
+
+
+/* for filters */
+
+.filters{
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

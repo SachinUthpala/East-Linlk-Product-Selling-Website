@@ -452,7 +452,7 @@
 
         <div class="products">
 
-          <div class="product-header">
+          <div class="product-header" id="level01Npoe_header">
             <h1>LEVEL ONE</h1>
             <p>ETHERNET SWITCHES - GIGABIT ETHERNET - NON POE</p>
           </div>
@@ -865,7 +865,7 @@
 
           </div>
 
-          <div class="product-header">
+          <div class="product-header" id="level01poe_header"  >
             <p>ETHERNET SWITCHES - GIGABIT ETHERNET - POE</p>
           </div>
 
@@ -1375,6 +1375,8 @@
   </style>
   <script>
     const showLevel01 = () => {
+      const level01npoe_header = document.getElementById("level01Npoe_header");
+      const level01poe_header = document.getElementById("level01poe_header");
       const level01npoe = document.getElementById("level01Npoe");
       const level01poe = document.getElementById("level01poe");
       const cisco = document.getElementById("cisco");
@@ -1383,6 +1385,12 @@
       level01poe.classList.remove("hideDiv");
       level01npoe.classList.add("showDiv");
       level01npoe.classList.remove("hideDiv");
+
+      level01poe_header.classList.add("showDiv");
+      level01poe_header.classList.remove("hideDiv");
+      level01npoe_header.classList.add("showDiv");
+      level01npoe_header.classList.remove("hideDiv");
+
       cisco.classList.remove("showDiv");
       cisco.classList.add("hideDiv");
     }
@@ -1392,15 +1400,25 @@
       const level01npoe = document.getElementById("level01Npoe");
       const level01poe = document.getElementById("level01poe");
 
+      const level01npoe_header = document.getElementById("level01Npoe_header");
+      const level01poe_header = document.getElementById("level01poe_header");
+
       cisco.classList.add("showDiv");
       cisco.classList.remove("hideDiv");
       level01npoe.classList.remove("showDiv");
       level01npoe.classList.add("hideDiv");
       level01poe.classList.remove("showDiv");
       level01poe.classList.add("hideDiv");
+
+      level01npoe_header.classList.remove("showDiv");
+      level01npoe_header.classList.add("hideDiv");
+      level01poe_header.classList.remove("showDiv");
+      level01poe_header.classList.add("hideDiv");
     }
 
     const showAll = () => {
+      const level01npoe_header = document.getElementById("level01Npoe_header");
+      const level01poe_header = document.getElementById("level01poe_header");
       const level01npoe = document.getElementById("level01Npoe");
       const level01poe = document.getElementById("level01poe");
       const cisco = document.getElementById("cisco");
@@ -1409,6 +1427,12 @@
       level01npoe.classList.remove("hideDiv");
       level01poe.classList.add("showDiv");
       level01poe.classList.remove("hideDiv");
+
+      level01npoe_header.classList.add("showDiv");
+      level01npoe_header.classList.remove("hideDiv");
+      level01poe_header.classList.add("showDiv");
+      level01poe_header.classList.remove("hideDiv");
+
       cisco.classList.add("showDiv");
       cisco.classList.remove("hideDiv");
     }
