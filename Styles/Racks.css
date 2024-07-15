@@ -289,6 +289,17 @@
     margin-right: 2px;
 }
 
+.data-container{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.data-container ul{
+    list-style: lower-roman;
+    padding-left: 30px;
+    padding-top: 10px;
+}
 @media (max-width: 1070px){
     .shoe{
         width: 135%;
@@ -329,6 +340,11 @@
 
     .logo{
         width: 70px;
+    }
+
+    .data-container{
+        display: flex;
+        flex-direction: column;
     }
 }
 
