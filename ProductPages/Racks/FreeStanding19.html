@@ -609,15 +609,23 @@
 
               <div class="types">
                 <h3>Rack Types</h3>
-                <ul>
+                <!-- <ul>
                   <li>OPEN RACKS</li>
                   <li>COVERED RACK WITH FRONT GLASS DOOR & BACK STEEL DOOR</li>
                   <li>COVERED RACK WITH FRONT & BACK MESH DOORS </li>
                   <li>COVERED RACK WITH FRONT MESH DOOR & BACK DUAL MESH DOOR  </li>
-                </ul>
+                </ul> -->
+                <br>
+                <select name="type" id="type">
+                  <option value="OPEN RACKS">OPEN RACKS</option>
+                  <option value="COVERED RACK WITH FRONT GLASS DOOR & BACK STEEL DOOR">COVERED RACK WITH FRONT GLASS DOOR & BACK STEEL DOOR</option>
+                  <option value="COVERED RACK WITH FRONT & BACK MESH DOORS">COVERED RACK WITH FRONT & BACK MESH DOORS</option>
+                  <option value="COVERED RACK WITH FRONT MESH DOOR & BACK DUAL MESH DOOR">COVERED RACK WITH FRONT MESH DOOR & BACK DUAL MESH DOOR</option>
+                </select>
+                <br>
                 <br>
                 <h3>Available Sizes</h3>
-                <ul>
+                <!-- <ul>
                   <li>600 x 1000 x 600</li>
                   <li>600 x 1000 x 800</li>
                   <li>600 x 1000 x 1000</li>
@@ -626,7 +634,32 @@
                   <li>800 x 1000 x 800</li>
                   <li>800 x 1000 x 1000</li>
                   <li>800 x 1000 x 1200</li>
-                </ul>
+                </ul> -->
+                <div class="sizeSelect">
+                  <div class="selectHeader">
+                    <h5>Width</h5>
+                    <h5>Height</h5>
+                    <h5>Depth</h5>
+                  </div>
+                  <div class="selectOpyions">
+                    <select name="width" id="width">
+                      <option value="600">600</option>
+                      <option value="800">800</option>
+                    </select>
+                    <select name="height" id="height">
+                      <option value="1000">1000</option>
+                    </select>
+                    <select name="depth" id="depth">
+                      <option value="600">600</option>
+                      <option value="800">800</option>
+                      <option value="800">1000</option>
+                      <option value="800">1200</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <button class="cart-btn">Add To Cart</button>
+
               </div>
           </div>
   

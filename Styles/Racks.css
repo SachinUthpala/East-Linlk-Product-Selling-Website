@@ -296,10 +296,71 @@
 
 
 .data-container ul{
-    list-style: lower-roman;
+    list-style: disc;
     padding-left: 30px;
     padding-top: 10px;
 }
+
+/* custom select options */
+.selectHeader{
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    gap: 60px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    h5{
+        font-weight: normal;
+        
+    }
+
+
+}
+
+.types{
+    select{
+        padding: 5px 15px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: .5s;
+        
+    }
+}
+
+.cart-btn{
+    padding: 8px 10px;
+    background: rgb(255, 93, 93);
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0px;
+    cursor: pointer;
+}
+
+.cart-btn:hover{
+    background-color: red;
+    color: #fff;
+}
+
+.selectOpyions{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    select{
+        padding: 5px 15px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: .5s;
+        
+    }
+}
+
+
+
 @media (max-width: 1070px){
     .shoe{
         width: 135%;
