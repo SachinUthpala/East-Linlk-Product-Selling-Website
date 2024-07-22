@@ -1,6 +1,7 @@
 
 
-.containers{
+.r-container{
+    padding-top: 50px;
     h1{
         text-align: center;
     }
@@ -62,6 +63,134 @@
             li::marker{
                 color: #000000cc;;
             }
+
+            
         }
+    }
+}
+
+.u-cart{
+    margin: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #0c0c0ccc;
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+.u-cart:hover{
+    background-color: #fff;
+    color: #ff0000cc;
+}
+
+
+
+/* media queries */
+
+@media (max-width: 920px){
+    .rack-structure{
+        flex-direction: column;
+        gap: 20px;
+
+        .rack-img{
+            img{
+                width: 350px;
+                height: auto !important;
+            }
+        }
+
+        .discription{
+            padding: 40px;
+            background-color: #aaaaaacc;
+            h2{
+                text-align: center;
+                padding-bottom: 20px;
+                color: #000000cc;
+            }
+    
+            p{
+                text-indent: 50px;
+                padding-bottom: 15px;
+                color: rgba(0, 0, 0, 0.575);
+            }
+    
+            ul{
+                padding-left: 20px;
+            
+            }
+
+           
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* custom select options */
+.selectHeader{
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    gap: 60px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    h5{
+        font-weight: normal;
+        
+    }
+
+
+}
+
+.types{
+    select{
+        padding: 5px 15px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: .5s;
+        
+    }
+}
+
+.cart-btn{
+    padding: 8px 10px;
+    background: rgb(255, 93, 93);
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0px;
+    cursor: pointer;
+}
+
+.cart-btn:hover{
+    background-color: red;
+    color: #fff;
+}
+
+.selectOpyions{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    select{
+        padding: 5px 15px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: .5s;
+        
     }
 }
