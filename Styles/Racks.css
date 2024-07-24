@@ -1,7 +1,7 @@
 
 
 .r-container{
-    padding-top: 50px;
+    padding-top: 50px 100px !important;
     h1{
         text-align: center;
     }
@@ -18,14 +18,32 @@
 
 
     .rack-img{
-        img{
-            width: 550px;
-            height: auto !important;
+        .img-container{
+            img{
+                width: 420px;
+                height: 500px;
+            }
         }
     }
 
+
+    .rack-img .img-container {
+        display: none;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .rack-img .img-container.active {
+        display: block;
+    opacity: 1;
+    }
+    
+    
+    
+
     .discription{
         padding: 40px;
+        margin-left: 50px;
         background-color: #aaaaaacc;
         h2{
             text-align: center;
@@ -193,4 +211,37 @@
         transition: .5s;
         
     }
+}
+
+
+.data-container{
+    display: flex;
+    flex-direction: row;
+
+    .images-content2{
+        .img-container2{
+            img{
+                width: 300px !important;
+                height: 450px !important;
+                padding-left: 50px;
+            }
+        }
+    }
+}
+
+
+.images-content2 {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-container2 {
+    transition: transform 0.5s ease;
+}
+
+.images-content2 img {
+    width: 300px !important;
+                height: 450px !important;
+                padding-left: 50px;
 }

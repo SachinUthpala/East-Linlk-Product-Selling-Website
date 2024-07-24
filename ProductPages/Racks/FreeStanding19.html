@@ -527,8 +527,19 @@
        <div class="containers r-container">
         <h1>Rack Structure</h1>
           <div class="rack-structure">
-            <div class="rack-img hiddenx">
-              <img src="../../Images/Products/Racks/structure.png" alt="">
+            <div class="rack-img ">
+              <div class="img-container">
+                <img src="../../Images/Products/Racks/Racks.png" alt="">
+              </div>
+              <div class="img-container">
+                <img src="../../Images/Products/Racks/Rack-with-Covers.png" alt="">
+              </div>
+              <div class="img-container">
+                <img src="../../Images/Products/Racks/Racks.png" alt="">
+              </div>
+              <div class="img-container">
+                <img src="../../Images/Products/Racks/Rack-with-Covers.png" alt="">
+              </div>
             </div>
             <div class="discription hiddeny">
               <h2>Free Standing Rack Structure</h2>
@@ -537,54 +548,31 @@
                   They are made from high-quality materials and are designed 
                   to withstand the forces of nature. </p>
               <p>These racks are perfect for small to medium-sized equipment and are ideal for use in various data centers, offices, and other environments.</p>
-              <ul>
-                <div class="first">
-                  <li><a href="https://timikenclosures.com/Timik/assets/img/19freestandingcat/19-FSRACK-TOP&BOTTOM.pdf" target=" ">FS Rack Top Frame</a></li>
-                  <li><a href="https://timikenclosures.com/Timik/assets/img/19freestandingcat/19-FSRACK-HORIZONTAL-MOUNTING.pdf" target=" ">FS Rack Horizontal Mounting Rails</a></li>
-                  <li><a href="https://timikenclosures.com/Timik/assets/img/19freestandingcat/19-FSRACK-TOP&BOTTOM.pdf" target=" ">FS Rack Bottom Frame</a></li>
-                </div>
-                <div class="second">
-                  <li><a href="https://timikenclosures.com/Timik/assets/img/19freestandingcat/19-FSRACK-MIDDLE-MOUNTING.pdf" target=" ">FS Rack Middle Mounting Rail</a></li>
-                  <li><a href="https://timikenclosures.com/Timik/assets/img/19freestandingcat/19-FSRACK-FRONT&BACK.pdf" target=" ">FS Rack Mounting Rails</a></li>
-                  <li><a href="https://timikenclosures.com/Timik/assets/img/19freestandingcat/19-FSRACK-MOUNTING-RAILS.pdf" target=" ">FS Rack Front & Back Frames</a></li>
-                </div>
-              </ul>
               <br>
               <a href="#u18" class="u-cart">More Information ..</a>
             </div>
           </div>
        </div>
 
-       <div class="containers r-container">
-        <h1>Doors & Covers</h1>
-          <div class="rack-structure">
-            <div class="discription hiddenx">
-              <h2>Free Standing Rack Door Types</h2>
-              <p>Free standing racks are designed for secure and
-                 easy accommodation of equipment, including cabling.
-                  They are made from high-quality materials and are designed 
-                  to withstand the forces of nature. </p>
-              <p>These racks are perfect for small to medium-sized equipment and are ideal for use in various data centers, offices, and other environments.</p>
-              <ul>
-                <div class="first">
-                  <li><a href="https://timikenclosures.com/Timik/assets/img/19freestandingcat/Top&Bottom-Cable-Entry-Plates.pdf" target=" ">FS Rack Top Frame</a></li>
-                  <li><a href="https://timikenclosures.com/Timik/assets/img/19freestandingcat/sidecover.pdf" target=" ">FS Rack Side Covers</a></li>
-                </div>
-                <div class="second">
-                  <li><a href="https://timikenclosures.com/Timik/assets/img/19freestandingcat/doors.pdf" target=" ">FS Rack Middle Mounting Rail</a></li>
-                  <li><a href="https://timikenclosures.com/Timik/assets/img/19freestandingcat/Top&Bottom-Cable-Entry-Plates.pdf" target=" ">FS Rack Mounting Rails</a></li>
-                </div>
-              </ul>
-              <br>
-              <a href="#u18" class="u-cart">More Information ..</a>
-            </div>
 
-            <div class="rack-img hiddeny">
-              <img src="../../Images/Products/Racks/plates.png" alt="">
-            </div>
-          </div>
-       </div>
+       <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const images = document.querySelectorAll('.rack-img .img-container');
+    let currentIndex = 0;
 
+    function showNextImage() {
+        images[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % images.length;
+        images[currentIndex].classList.add('active');
+    }
+
+    images[currentIndex].classList.add('active');
+    setInterval(showNextImage, 3500);
+});
+
+       </script>
+
+       
        
 
 
@@ -676,53 +664,67 @@
           <div class="data-container">
             
 
-              <div class="types">
-                <h3>Rack Types</h3>
-                <br>
-                <select name="type" id="type">
+            <div class="types">
+              <h3>Rack Types</h3>
+              <br>
+              <select name="type" id="type" onchange="filterImages()">
+                  <option value="ALL">All Types</option>
                   <option value="OPEN RACKS">OPEN RACKS</option>
                   <option value="COVERED RACK WITH FRONT GLASS DOOR & BACK STEEL DOOR">COVERED RACK WITH FRONT GLASS DOOR & BACK STEEL DOOR</option>
                   <option value="COVERED RACK WITH FRONT & BACK MESH DOORS">COVERED RACK WITH FRONT & BACK MESH DOORS</option>
                   <option value="COVERED RACK WITH FRONT MESH DOOR & BACK DUAL MESH DOOR">COVERED RACK WITH FRONT MESH DOOR & BACK DUAL MESH DOOR</option>
-                </select>
-                <br>
-                <br>
-                <h3>Available Sizes</h3>
-                <div class="sizeSelect">
+              </select>
+              <br><br>
+              <h3>Available Sizes</h3>
+              <div class="sizeSelect">
                   <div class="selectHeader">
-                    <h5>Width</h5>
-                    <h5>Height</h5>
-                    <h5>Depth</h5>
+                      <h5>Width</h5>
+                      <h5>Height</h5>
+                      <h5>Depth</h5>
                   </div>
-                  <div class="selectOpyions">
-                    <select name="width" id="width">
-                      <option value="600">600</option>
-                      <option value="800">800</option>
-                    </select>
-                    
-                    <select name="height" id="height">
-                      <option value="1000">18U - 1000</option>
-                      <option value="1000">22U - 1200</option>
-                      <option value="1000">27U - 1400</option>
-                      <option value="1000">31U - 1600</option>
-                      <option value="1000">36U - 1800</option>
-                      <option value="1000">40U - 2000</option>
-                      <option value="1000">42U - 2100</option>
-                      <option value="1000">45U - 2200</option>
-                      <option value="1000">50U - 2420</option>
-                    </select>
-                    <select name="depth" id="depth">
-                      <option value="600">600</option>
-                      <option value="800">800</option>
-                      <option value="800">1000</option>
-                      <option value="800">1200</option>
-                    </select>
+                  <div class="selectOptions">
+                      <select name="width" id="width">
+                          <option value="600">600</option>
+                          <option value="800">800</option>
+                      </select>
+                      <select name="height" id="height">
+                          <option value="1000">18U - 1000</option>
+                          <option value="1200">22U - 1200</option>
+                          <option value="1400">27U - 1400</option>
+                          <option value="1600">31U - 1600</option>
+                          <option value="1800">36U - 1800</option>
+                          <option value="2000">40U - 2000</option>
+                          <option value="2100">42U - 2100</option>
+                          <option value="2200">45U - 2200</option>
+                          <option value="2420">50U - 2420</option>
+                      </select>
+                      <select name="depth" id="depth">
+                          <option value="600">600</option>
+                          <option value="800">800</option>
+                          <option value="1000">1000</option>
+                          <option value="1200">1200</option>
+                      </select>
                   </div>
-                </div>
-                
-                <button class="cart-btn">Add To Cart</button>
-
               </div>
+              <button class="cart-btn">Add To Cart</button>
+          </div>
+          
+          <div class="images-content2">
+              <div class="img-container2" data-type="OPEN RACKS">
+                  <img src="../../Images/Products/Racks/Racks.png" alt="Open Racks">
+              </div>
+              <div class="img-container2" data-type="COVERED RACK WITH FRONT GLASS DOOR & BACK STEEL DOOR">
+                  <img src="../../Images/Products/Racks/Rack-with-Covers.png" alt="Covered Rack with Front Glass Door & Back Steel Door">
+              </div>
+              <div class="img-container2" data-type="COVERED RACK WITH FRONT & BACK MESH DOORS">
+                  <img src="../../Images/Products/Racks/Racks.png" alt="Covered Rack with Front & Back Mesh Doors">
+              </div>
+              <div class="img-container2" data-type="COVERED RACK WITH FRONT MESH DOOR & BACK DUAL MESH DOOR">
+                  <img src="../../Images/Products/Racks/Rack-with-Covers.png" alt="Covered Rack with Front Mesh Door & Back Dual Mesh Door">
+              </div>
+          </div>
+          
+          
           </div>
   
           <div class="popup-discription">
@@ -742,6 +744,54 @@
           <a href="#" class="popup__close">close</a>
         </div>
       </div>
+
+      <script>
+       let currentIndex = 0;
+let autoSlideInterval;
+const images = document.querySelectorAll('.img-container2');
+const totalImages = images.length;
+
+function showImage(index) {
+    images.forEach((img, i) => {
+        img.style.transform = `translateX(-${index * 100}%)`;
+    });
+}
+
+function startAutoSlide() {
+    autoSlideInterval = setInterval(() => {
+        currentIndex = (currentIndex + 1) % totalImages;
+        showImage(currentIndex);
+    }, 3000);
+}
+
+function stopAutoSlide() {
+    clearInterval(autoSlideInterval);
+}
+
+function filterImages() {
+    const selectedType = document.getElementById('type').value;
+    if (selectedType === "ALL") {
+        images.forEach(img => img.style.display = 'block');
+        startAutoSlide();
+    } else {
+        stopAutoSlide();
+        images.forEach(img => {
+            img.style.display = img.getAttribute('data-type') === selectedType ? 'block' : 'none';
+        });
+    }
+    currentIndex = 0;
+    showImage(currentIndex);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    startAutoSlide(); // Start auto sliding on page load
+});
+
+
+
+
+
+      </script>
 
 
 
