@@ -542,7 +542,7 @@
                 <img src="../../Images/Products/Racks/Rack-with-Covers.png" alt="">
               </div>
             </div>
-            
+
             <div class="discription hiddeny">
               <h2>Free Standing Rack Structure</h2>
               <p>Free standing racks are designed for secure and
@@ -553,24 +553,25 @@
               <br>
               <a href="#u18" class="u-cart">More Information ..</a>
             </div>
+
           </div>
        </div>
 
 
        <script>
-        document.addEventListener('DOMContentLoaded', () => {
-    const images = document.querySelectorAll('.rack-img .img-container');
-    let currentIndex = 0;
+          document.addEventListener('DOMContentLoaded', () => {
+          const images = document.querySelectorAll('.rack-img .img-container');
+          let currentIndex = 0;
 
-    function showNextImage() {
-        images[currentIndex].classList.remove('active');
-        currentIndex = (currentIndex + 1) % images.length;
-        images[currentIndex].classList.add('active');
-    }
+          function showNextImage() {
+              images[currentIndex].classList.remove('active');
+              currentIndex = (currentIndex + 1) % images.length;
+              images[currentIndex].classList.add('active');
+          }
 
-    images[currentIndex].classList.add('active');
-    setInterval(showNextImage, 3500);
-});
+          images[currentIndex].classList.add('active');
+          setInterval(showNextImage, 3500);
+          });
 
        </script>
 
