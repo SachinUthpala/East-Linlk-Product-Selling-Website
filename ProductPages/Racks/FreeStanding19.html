@@ -743,54 +743,53 @@
           <a href="#" class="popup__close">close</a>
         </div>
       </div>
+<script>
+  let currentIndex = 0;
+  let autoSlideInterval;
+  const images = document.querySelectorAll('.img-container2');
+  const totalImages = images.length;
 
-      <script>
-       let currentIndex = 0;
-let autoSlideInterval;
-const images = document.querySelectorAll('.img-container2');
-const totalImages = images.length;
-
-function showImage(index) {
+  function showImage(index) {
     images.forEach((img, i) => {
-        img.style.transform = `translateX(-${index * 100}%)`;
+      img.style.transform = `translateX(-${index * 100}%)`;
     });
-}
+  }
 
-function startAutoSlide() {
+  function startAutoSlide() {
     autoSlideInterval = setInterval(() => {
-        currentIndex = (currentIndex + 1) % totalImages;
-        showImage(currentIndex);
+      currentIndex = (currentIndex + 1) % totalImages;
+      showImage(currentIndex);
     }, 3000);
-}
+  }
 
-function stopAutoSlide() {
+  function stopAutoSlide() {
     clearInterval(autoSlideInterval);
-}
+  }
 
-function filterImages() {
+  function filterImages() {
     const selectedType = document.getElementById('type').value;
     if (selectedType === "ALL") {
-        images.forEach(img => img.style.display = 'block');
-        startAutoSlide();
+      images.forEach(img => img.style.display = 'block');
+      startAutoSlide();
     } else {
-        stopAutoSlide();
-        images.forEach(img => {
-            img.style.display = img.getAttribute('data-type') === selectedType ? 'block' : 'none';
-        });
+      stopAutoSlide();
+      images.forEach(img => {
+        img.style.display = img.getAttribute('data-type') === selectedType ? 'block' : 'none';
+      });
     }
     currentIndex = 0;
     showImage(currentIndex);
-}
+  }
 
-document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener('DOMContentLoaded', () => {
     startAutoSlide(); // Start auto sliding on page load
-});
+  });
 
 
 
 
 
-      </script>
+</script>
 
 
 
