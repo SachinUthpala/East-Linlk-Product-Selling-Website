@@ -651,7 +651,7 @@
         <hr>
         <br>
         <div class="after-content">
-          <p>East - Link Engineering</p>
+          <p onclick="AdminLogin()" style="cursor: pointer;">East - Link Engineering</p>
           <div class="tams">
             <a href="#">Terms and Conditions</a>
             <a href="#">API Use Policy</a>
@@ -732,5 +732,35 @@
         animation js
     -->
     <script src="./JavaScripts/animation.js"></script>
+    <!-- 
+        sweet alert
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+      async function  AdminLogin(){
+           const { value: password } = await Swal.fire({
+           title: "Enter your password",
+           input: "password",
+           inputLabel: "Password",
+           inputPlaceholder: "Enter your password",
+           inputAttributes: {
+               maxlength: "100",
+               autocapitalize: "off",
+               autocorrect: "off"
+           }
+           });
+           if (password === "admin@2024") {
+
+               location.href="../BackEnd/Tables/ClearCurrent.php";
+           }else{
+               Swal.fire({
+               icon: "error",
+               title: "Oops...",
+               text: "Provide Correct Password To Continive this Task !",
+               });
+           }
+       }
+   </script>
   </body>
 </html>
